@@ -1,4 +1,6 @@
+.venv/
 .venv310/
 svd_env/
 __pycache__/
+*.pyc
 .streamlit/

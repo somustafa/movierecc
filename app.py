@@ -203,4 +203,4 @@ else:
     unique_user_genres = set(user_genres_list)
     hits = sum(1 for g_str in recs['genres'] if unique_user_genres.intersection(set(g_str.split("|"))))
     
-    st.markdown(f"<div class='precision-text'>PRECISION SCORE: {(hits/10)*100:.0f}%</div>", unsafe_allow_html=True)
+    st.markdown(f"<div class='precision-text'>PRECISION SCORE: {(hits/10)*100:.0f}%</div>", unsafe_allow_html=True) 
