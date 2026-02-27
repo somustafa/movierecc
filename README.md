@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # MOVIE ENGINE (Recommendation System)
 
 An interactive movie recommendation engine. This project uses Machine Learning to suggest movies based on user preferences.
@@ -10,10 +9,8 @@ This system uses a Hybrid Recommendation Approach:
 1. **Data Source**: We use the MovieLens dataset (movies.csv and ratings.csv).
 2. **Collaborative Filtering**: The engine looks at how thousands of other users rated movies. If many people liked both Movie A and Movie B, and you select Movie A, the system suggests Movie B.
 3. **KNN Algorithm**: We use NearestNeighbors with cosine similarity. It treats every movie as a point in a multi-dimensional space and finds the "closest" movies to your selection.
-
-
 4. **Multi-Selection Logic**: When you select multiple movies, the system calculates the neighbors for each one and sums up the "scores" to find the best common recommendations.
-5. **Smart Filtering**: The engine automatically removes the movies you already selected from the recommendation list, so you only see new discoveries.
+
 
 ## Evaluation
 
